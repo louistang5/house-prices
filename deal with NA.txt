@@ -1,0 +1,59 @@
+
+MSSubClass       2919 non-null int64		to object
+MSZoning         2915 non-null object		4 missing, fill other
+LotFrontage      2433 non-null float64		486 missing, fill mean
+
+Alley            198 non-null object		NA means no Alley, fill No
+
+Utilities        2917 non-null object		ordinal, to int; 2 missing, fill other
+
+Exterior1st      2918 non-null object		1 missing, fill other
+Exterior2nd      2918 non-null object		1 missing, fill other
+MasVnrType       2895 non-null object		24 missing, fill other
+MasVnrArea       2896 non-null float64		23 missing, fill mean
+ExterQual        2919 non-null object		ordinal, to int
+ExterCond        2919 non-null object		ordinal, to int
+
+BsmtQual         2838 non-null object		ordinal, to int; NA means no basement, fill No; x missing
+BsmtCond         2837 non-null object		ordinal, to int; NA means no basement, fill No; x missing
+BsmtExposure     2837 non-null object		ordinal, to int; NA means no basement, fill No; x missing
+BsmtFinType1     2840 non-null object		ordinal, to int; NA means no basement, fill No; x missing
+BsmtFinSF1       2918 non-null float64		1 missing, fill 0
+BsmtFinType2     2839 non-null object		ordinal, to int; NA means no basement, fill No; x missing
+BsmtFinSF2       2918 non-null float64		1 missing, fill 0
+BsmtUnfSF        2918 non-null float64		1 missing, fill 0
+TotalBsmtSF      2918 non-null float64		1 missing, fill 0
+
+HeatingQC        2919 non-null object		ordinal, to int
+CentralAir       2919 non-null object		binary
+Electrical       2918 non-null object		1 missing, fill other
+
+BsmtFullBath     2917 non-null float64		2 missing, no basement, fill 0
+BsmtHalfBath     2917 non-null float64		2 missing, no basement, fill 0
+
+KitchenQual      2918 non-null object		ordinal, to int; 1 missing, fill ?
+
+Functional       2917 non-null object		ordinal, to int; 2 missing, fill ?
+
+FireplaceQu      1499 non-null object		ordinal, to int; NA means no fireplace, fill No
+GarageType       2762 non-null object		NA means no garage, fill No
+GarageYrBlt      2760 non-null float64		fill ?
+GarageFinish     2760 non-null object		NA means no garage, fill No
+GarageCars       2918 non-null float64		1 missing, fill mean
+GarageArea       2918 non-null float64		1 missing, fill mean
+GarageQual       2760 non-null object		ordinal, to int; NA means no garage, fill No; x missing
+GarageCond       2760 non-null object		ordinal, to int; NA means no garage, fill No; x missing
+PavedDrive       2919 non-null object		ordinal, to int
+
+PoolQC           10 non-null object			ordinal, to int; NA means no pool, fill No
+Fence            571 non-null object		NA means no fence, fill No
+MiscFeature      105 non-null object		NA means no other perks, fill No
+
+MoSold           2919 non-null int64		to object
+
+SaleType         2918 non-null object		1 missing, fill ?
+
+--------------------
+
+if a feature has one dominating value, drop this feature
+dropna for all rows
